@@ -88,7 +88,7 @@
                     <li><a style="font-size: 12pt;" href="#0">WHY US</a></li>
                     <li><a style="font-size: 12pt;" href="#0">RESOURCES</a></li>
                     <li><a style="font-size: 12pt;" href="#0">CONTACT</a></li>
-                    <li><a data-open="modal">Sign Up</a>
+                    <li><a data-open="modal">Sign Up</a></li>
                 </ul>
             </div>
         </div>
@@ -110,8 +110,18 @@
                             <input type="text" placeholder="Password">
                         </label>
                         <p class="text-center">By clicking Open Account you accept the <a>Terms of Use</a></p>
-                        <p><a type="submit" class="button expanded"><b>OPEN ACCOUNT</b></a></p>
-                        <p class="text-center">Already have an account? <a href="#">Sign up</a></p>
+                        <p><a type="submit" class="button expanded" data-open="success_signup"><b>OPEN ACCOUNT</b></a></p>
+                        <p class="text-center">Already have an account? <a href="#">Sign in</a></p>
+                    </div>
+                </form>
+              </div>
+              <div class="reveal" id="success_signup" data-reveal>
+                <form>
+                    <div class="row column log-in-form">
+                        <h4 class="text-center" style="color:green;">Your New account was created.</h4>
+                        <p class="text-center">An email with a new account details will be sent to you shortly.</p>
+                        <p><a type="submit" class="button expanded"><b>SIGN IN</b></a></p>
+                        <p class="text-center">Thank you for opening an account with us.</p>
                     </div>
                 </form>
               </div>
