@@ -1,136 +1,123 @@
 <!doctype html>
     <html class="no-js" lang="en">
-        <head>
-            <meta charset="utf-8" />
-            <meta http-equiv="x-ua-compatible" content="ie=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Sign up | One pager</title>
-            <link rel="stylesheet" href="assets/css/foundation.css" />
-            <link rel="stylesheet" href="assets/css/app.css" />
-            <link rel="stylesheet" href="assets/css/foundation-icons/foundation-icons.css" />
-            <style>
-                body{
-                    /*background: #f1f1f1;*/
-                }
+      <head>
+          <meta charset="utf-8" />
+          <meta http-equiv="x-ua-compatible" content="ie=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Sign up | One pager</title>
+          <link rel="stylesheet" href="assets/css/foundation.css" />
+          <link rel="stylesheet" href="assets/css/app.css" />
+          <link rel="stylesheet" href="assets/css/foundation-icons/foundation-icons.css" />
+          <style>
+              .row.column.log-in-form{
+                border-color: transparent;
+              }
 
-                .row.column.log-in-form{
-                  border-color: transparent;
-                }
-
-                .title-bar {
-                    background: #4e4e4e;
-                    padding: 0.9rem;
-                }
-                .top-bar {
-                    background: #4e4e4e;
-                }
-                .top-bar ul {
-                    background: #4e4e4e;
-                }
-                .top-bar ul li {
-                    background: #4e4e4e;
-                }
-                .top-bar ul li a {
-                    color: #ffffff;
-                }
+              .title-bar {
+                background: #4e4e4e;
+                padding: 0.9rem;
+              }
+              .top-bar {
+                background: #4e4e4e;
+              }
+              .top-bar ul {
+                background: #4e4e4e;
+              }
+              .top-bar ul li {
+                  background: #4e4e4e;
+              }
+              .top-bar ul li a {
+                color: #ffffff;
+              }
+              .menu-text {
+                color: #ffffff;
+              }
+              @media only screen and (max-width: 40em) {
                 .menu-text {
-                    color: #ffffff;
+                  display: none !important;
                 }
-                @media only screen and (max-width: 40em) {
-                    .menu-text {
-                        display: none !important;
-                    }
-                }
-                @media only screen and (min-width: 40em) {
-                    .top-bar .menu:last-child {
-                        border-left: 0px solid #4e4e4e;
-                    }
-                    .top-bar .menu:first-child {
-                        border-left: none;
-                    }
-                    .top-bar .menu li:not(:last-child) {
-                        border-right: 0px solid #4e4e4e;
-                    }
-                }
-                .dropdown.menu .submenu{
-                    border: none;
-                }
-                .dropdown.menu .is-dropdown-submenu-parent.is-right-arrow > a::after{
-                    border-color: #fff transparent transparent;
-                }
-                .is-drilldown-submenu-parent > a::after{
-                    border-color: transparent transparent transparent #fff;
-                }
-                .js-drilldown-back::before{
-                    border-color: transparent #fff transparent transparent;
-                }
-                .log-in-form {
-                    border: 1px solid #cacaca;
-                    padding: 1rem;
-                    padding-left: 1rem !important;
-                    padding-right: 1rem !important;
-                    border-radius: 3px;
-                    margin-top: 5rem;
-                }
-            </style>
-        </head>
+              }
+              @media only screen and (min-width: 40em) {
+                  .top-bar .menu:last-child {
+                    border-left: 0px solid #4e4e4e;
+                  }
+                  .top-bar .menu:first-child {
+                    border-left: none;
+                  }
+                  .top-bar .menu li:not(:last-child) {
+                    border-right: 0px solid #4e4e4e;
+                  }
+              }
+              .dropdown.menu .submenu{
+                border: none;
+              }
+              .dropdown.menu .is-dropdown-submenu-parent.is-right-arrow > a::after{
+                border-color: #fff transparent transparent;
+              }
+              .is-drilldown-submenu-parent > a::after{
+                border-color: transparent transparent transparent #fff;
+              }
+              .js-drilldown-back::before{
+                border-color: transparent #fff transparent transparent;
+              }
+              .log-in-form {
+                border: 1px solid #cacaca;
+                padding: 1rem;
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+                border-radius: 3px;
+                margin-top: 5rem;
+              }
+          </style>
+      </head>
         <body>
         <!--nav bar-->
         <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-            <button class="menu-icon" type="button" data-toggle></button>
-            <div class="title-bar-title">Menu</div>
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title">Menu</div>
         </div>
         <div class="top-bar" id="main-menu">
             <div class="top-bar-left">
-                <ul class="dropdown menu" data-dropdown-menu>
-                <li class="menu-text">?</li>
-                </ul>
+              <ul class="dropdown menu" data-dropdown-menu>
+              <li class="menu-text">?</li>
+              </ul>
             </div>
             <div class="top-bar-right">
-                <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
-                    <li><a style="font-size: 12pt;" href="#0">PRODUCTS</a></li>
-                    <li><a style="font-size: 12pt;" href="#0">WHO WE ARE</a></li>
-                    <li><a style="font-size: 12pt;" href="#0">WHY US</a></li>
-                    <li><a style="font-size: 12pt;" href="#0">RESOURCES</a></li>
-                    <li><a style="font-size: 12pt;" href="#0">CONTACT</a></li>
-                    <li><a data-open="modal">Sign Up</a></li>
-                </ul>
+              <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
+                <li><a style="font-size: 12pt;" href="#0">PRODUCTS</a></li>
+                <li><a style="font-size: 12pt;" href="#0">WHO WE ARE</a></li>
+                <li><a style="font-size: 12pt;" href="#0">WHY US</a></li>
+                <li><a style="font-size: 12pt;" href="#0">RESOURCES</a></li>
+                <li><a style="font-size: 12pt;" href="#0">CONTACT</a></li>
+                <li><a data-open="modal">Sign Up</a></li>
+              </ul>
             </div>
         </div>
         <!--/nav bar-->
         <div class="row">
-            <div class="medium-6 medium-centered large-6 large-centered columns">
-              <div class="reveal" id="modal" data-reveal>
-                <form>
-                    <div class="row column log-in-form">
-                        <h4 class="text-center">Open Account</h4>
-
-                        <!--label>Full Names
-                            <input type="text" placeholder="John Snow">
-                        </label-->
-                        <label>Email
-                            <input type="text" placeholder="somebody@example.com">
-                        </label>
-                        <label>Password
-                            <input type="text" placeholder="Password">
-                        </label>
-                        <p class="text-center">By clicking Open Account you accept the <a>Terms of Use</a></p>
-                        <p><a type="submit" class="button expanded" data-open="success_signup"><b>OPEN ACCOUNT</b></a></p>
-                        <p class="text-center">Already have an account? <a href="#">Sign in</a></p>
-                    </div>
-                </form>
-              </div>
-              <div class="reveal" id="success_signup" data-reveal>
-                <form>
-                    <div class="row column log-in-form">
-                        <h4 class="text-center" style="color:green;">Your New account was created.</h4>
-                        <p class="text-center">An email with a new account details will be sent to you shortly.</p>
-                        <p><a type="submit" class="button expanded"><b>SIGN IN</b></a></p>
-                        <p class="text-center">Thank you for opening an account with us.</p>
-                    </div>
-                </form>
-              </div>
+          <div class="medium-6 medium-centered large-6 large-centered columns">
+            <div class="reveal" id="modal" data-reveal>
+              <form>
+                <div class="row column log-in-form">
+                  <h4 class="text-center">Open Account</h4>
+                  <label>Email
+                    <input type="text" placeholder="somebody@example.com">
+                  </label>
+                  <label>Password
+                    <input type="text" placeholder="Password">
+                  </label>
+                  <p class="text-center">By clicking Open Account you accept the <a>Terms of Use</a></p>
+                  <p><a type="submit" class="button expanded" data-open="success_signup"><b>OPEN ACCOUNT</b></a></p>
+                  <p class="text-center">Already have an account? <a href="#">Sign in</a></p>
+                </div>
+              </form>
             </div>
+            <div class="reveal" id="success_signup" data-reveal>
+              <h4 class="text-center" style="color:green;">Your New account was created.</h4>
+              <p class="text-center">An email with a new account details will be sent to you shortly.</p>
+              <p class="text-center">Thank you for opening an account with us.</p>
+            </div>
+          </div>
         </div>
         <script src="assets/js/vendor/jquery.min.js"></script>
         <script src="asset/js/vendor/what-input.min.js"></script>
