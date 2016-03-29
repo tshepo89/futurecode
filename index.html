@@ -14,57 +14,57 @@
                 }
                 .title-bar {
                     background: #4e4e4e;
-                    padding: 0.9rem; 
+                    padding: 0.9rem;
                 }
                 .top-bar {
-                    background: #4e4e4e; 
+                    background: #4e4e4e;
                 }
                 .top-bar ul {
-                    background: #4e4e4e; 
+                    background: #4e4e4e;
                 }
                 .top-bar ul li {
-                    background: #4e4e4e; 
+                    background: #4e4e4e;
                 }
                 .top-bar ul li a {
-                    color: #ffffff; 
+                    color: #ffffff;
                 }
                 .menu-text {
-                    color: #ffffff; 
+                    color: #ffffff;
                 }
                 @media only screen and (max-width: 40em) {
                     .menu-text {
-                        display: none !important; 
-                    } 
+                        display: none !important;
+                    }
                 }
                 @media only screen and (min-width: 40em) {
                     .top-bar .menu:last-child {
-                        border-left: 0px solid #4e4e4e; 
+                        border-left: 0px solid #4e4e4e;
                     }
                     .top-bar .menu:first-child {
-                        border-left: none; 
+                        border-left: none;
                     }
                     .top-bar .menu li:not(:last-child) {
-                        border-right: 0px solid #4e4e4e; 
-                    } 
+                        border-right: 0px solid #4e4e4e;
+                    }
                 }
                 .dropdown.menu .submenu{
-                    border: none; 
+                    border: none;
                 }
                 .dropdown.menu .is-dropdown-submenu-parent.is-right-arrow > a::after{
-                    border-color: #fff transparent transparent; 
+                    border-color: #fff transparent transparent;
                 }
                 .is-drilldown-submenu-parent > a::after{
-                    border-color: transparent transparent transparent #fff; 
+                    border-color: transparent transparent transparent #fff;
                 }
                 .js-drilldown-back::before{
-                    border-color: transparent #fff transparent transparent; 
+                    border-color: transparent #fff transparent transparent;
                 }
                 .log-in-form {
                     border: 1px solid #cacaca;
                     padding: 1rem;
                     padding-left: 1rem !important;
                     padding-right: 1rem !important;
-                    border-radius: 3px; 
+                    border-radius: 3px;
                     margin-top: 5rem;
                 }
             </style>
@@ -88,16 +88,18 @@
                     <li><a style="font-size: 12pt;" href="#0">WHY US</a></li>
                     <li><a style="font-size: 12pt;" href="#0">RESOURCES</a></li>
                     <li><a style="font-size: 12pt;" href="#0">CONTACT</a></li>
+                    <li><a data-open="modal">Sign Up</a>
                 </ul>
             </div>
         </div>
         <!--/nav bar-->
         <div class="row">
             <div class="medium-6 medium-centered large-6 large-centered columns">
+              <div class="reveal" id="modal" data-reveal>
                 <form>
                     <div class="row column log-in-form">
                         <h4 class="text-center">Open Account</h4>
-                        
+
                         <!--label>Full Names
                             <input type="text" placeholder="John Snow">
                         </label-->
@@ -109,9 +111,10 @@
                         </label>
                         <p class="text-center">By clicking Open Account you accept the <a>Terms of Use</a></p>
                         <p><a type="submit" class="button expanded"><b>OPEN ACCOUNT</b></a></p>
-                        <p class="text-center">Already have an account? <a href="#">Sign up</a></p>   
+                        <p class="text-center">Already have an account? <a href="#">Sign up</a></p>
                     </div>
                 </form>
+              </div>
             </div>
         </div>
         <script src="assets/js/vendor/jquery.min.js"></script>
